@@ -79,6 +79,7 @@ export interface GA4Config {
   debug_mode?: boolean;
   send_page_view?: boolean;
   groups?: string;
+  g4Address?: string;
 }
 
 /**

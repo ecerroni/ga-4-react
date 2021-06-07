@@ -89,7 +89,7 @@ export class GA4React implements GA4ReactInterface {
 
       scriptAsync.setAttribute(
         'src',
-        `https://www.googletagmanager.com/gtag/js?id=${this.gaCode}`
+        `${this.gaConfig?.g4Address || 'https://www.googletagmanager.com/gtag/js'}?id=${this.gaCode}`
       );
       scriptAsync.onload = () => {
         const target: HTMLElement | null = document.getElementById(
